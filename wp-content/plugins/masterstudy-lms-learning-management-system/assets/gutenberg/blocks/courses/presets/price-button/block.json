@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "masterstudy/courses-preset-price-button",
+  "version": "0.1.0",
+  "title": "MasterStudy Courses Price button",
+  "category": "masterstudy-lms-blocks",
+  "icon": "carrot",
+  "description": "Displays Courses Price Button",
+  "parent": [
+    "masterstudy/courses-preset"
+  ],
+  "supports": {
+    "html": false
+  },
+  "attributes": {},
+  "keywords": [
+    "lms",
+    "courses",
+    "price",
+    "button",
+    "masterstudy"
+  ],
+  "usesContext": [
+    "masterstudy/coursesPerPage",
+    "masterstudy/coursesPerRow",
+    "masterstudy/coursesPerRowTablet",
+    "masterstudy/coursesPerRowMobile",
+    "masterstudy/coursesOrderBy",
+    "masterstudy/coursesCategory"
+  ],
+  "example": {},
+  "textdomain": "masterstudy-lms-learning-management-system",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

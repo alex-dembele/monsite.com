@@ -1,0 +1,25 @@
+
+# BEGIN WordPress
+# Les directives (lignes) entre « BEGIN WordPress » et « END WordPress » sont générées
+# dynamiquement, et doivent être modifiées uniquement via les filtres WordPress.
+# Toute modification des directives situées entre ces marqueurs sera surchargée.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /monsite.com/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /monsite.com/index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN Simply Static
+# Les directives (lignes) entre « BEGIN Simply Static » et « END Simply Static » sont générées
+# dynamiquement, et doivent être modifiées uniquement via les filtres WordPress.
+# Toute modification des directives situées entre ces marqueurs sera surchargée.
+<Files "C:\xampp\htdocs\monsite.com/wp-content/uploads\simply-static\f4c6f42f65d2a75250b95909e1a29bd4-debug.txt">
+require all denied
+require host localhost
+</Files>
+# END Simply Static

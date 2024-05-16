@@ -1,0 +1,512 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "masterstudy/test-block",
+  "version": "0.1.0",
+  "title": "MasterStudy Test block",
+  "category": "masterstudy-lms-blocks",
+  "icon": "smiley",
+  "description": "Test block for settings",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "viewOption": {
+      "type": "string",
+      "default": "default"
+    },
+    "viewOptionTablet": {
+      "type": "string",
+      "default": "default"
+    },
+    "viewOptionMobile": {
+      "type": "string",
+      "default": "default"
+    },
+    "textAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "textAlignTablet": {
+      "type": "string",
+      "default": "center"
+    },
+    "textAlignMobile": {
+      "type": "string",
+      "default": "center"
+    },
+    "htmlTag": {
+      "type": "string",
+      "default": "p"
+    },
+    "simpleSelect": {
+      "type": "string",
+      "default": "music"
+    },
+    "simpleSelectTablet": {
+      "type": "string",
+      "default": "music"
+    },
+    "simpleSelectMobile": {
+      "type": "string",
+      "default": "music"
+    },
+    "multiSelect": {
+      "type": "array",
+      "default": [
+        "music"
+      ]
+    },
+    "multiSelectTablet": {
+      "type": "array",
+      "default": [
+        "music"
+      ]
+    },
+    "multiSelectMobile": {
+      "type": "array",
+      "default": [
+        "music"
+      ]
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "isChecked": {
+      "type": "boolean",
+      "default": true
+    },
+    "isCheckedAdaptive": {
+      "type": "boolean",
+      "default": false
+    },
+    "isCheckedAdaptiveTablet": {
+      "type": "boolean",
+      "default": false
+    },
+    "isCheckedAdaptiveMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "inputValue": {
+      "type": "string",
+      "default": "Toggle 1"
+    },
+    "inputValueTablet": {
+      "type": "string",
+      "default": "Toggle 1"
+    },
+    "inputValueMobile": {
+      "type": "string",
+      "default": "Toggle 1"
+    },
+    "numberValue": {
+      "type": "number",
+      "default": 2
+    },
+    "numberValueTablet": {
+      "type": "number",
+      "default": 2
+    },
+    "numberValueMobile": {
+      "type": "number",
+      "default": 2
+    },
+    "numberUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": ""
+    },
+    "borderRadius": {
+      "type": "object",
+      "default": {
+        "top": "0",
+        "left": "0",
+        "right": "0",
+        "bottom": "0"
+      }
+    },
+    "borderRadiusTablet": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "borderRadiusMobile": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "padding": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "paddingTablet": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "paddingMobile": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "paddingUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "paddingUnitTablet": {
+      "type": "string",
+      "default": "px"
+    },
+    "paddingUnitMobile": {
+      "type": "string",
+      "default": "px"
+    },
+    "margin": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "marginTablet": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "marginMobile": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "marginUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "marginUnitTablet": {
+      "type": "string",
+      "default": "px"
+    },
+    "marginUnitMobile": {
+      "type": "string",
+      "default": "px"
+    },
+    "rangeValue": {
+      "type": "number",
+      "default": 2
+    },
+    "rangeValueTablet": {
+      "type": "number",
+      "default": 2
+    },
+    "rangeValueMobile": {
+      "type": "number",
+      "default": 2
+    },
+    "rangeUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "borderStyle": {
+      "type": "string",
+      "default": "none"
+    },
+    "borderStyleTablet": {
+      "type": "string",
+      "default": "none"
+    },
+    "borderStyleMobile": {
+      "type": "string",
+      "default": "none"
+    },
+    "borderColor": {
+      "type": "string",
+      "default": ""
+    },
+    "borderColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "borderColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "borderWidth": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "borderWidthTablet": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "borderWidthMobile": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "right": "",
+        "bottom": ""
+      }
+    },
+    "shadowColor": {
+      "type": "string",
+      "default": ""
+    },
+    "shadowColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "shadowColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "shadowHorizontal": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowHorizontalTablet": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowHorizontalMobile": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowVertical": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowVerticalTablet": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowVerticalMobile": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowBlur": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowBlurTablet": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowBlurMobile": {
+      "type": "number",
+      "default": 2
+    },
+    "shadowSpread": {
+      "type": "number",
+      "default": 5
+    },
+    "shadowSpreadTablet": {
+      "type": "number",
+      "default": 5
+    },
+    "shadowSpreadMobile": {
+      "type": "number",
+      "default": 5
+    },
+    "shadowInset": {
+      "type": "boolean",
+      "default": false
+    },
+    "shadowInsetTablet": {
+      "type": "boolean",
+      "default": false
+    },
+    "shadowInsetMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "typographySize": {
+      "type": "number",
+      "default": 14
+    },
+    "typographySizeTablet": {
+      "type": "number",
+      "default": 14
+    },
+    "typographySizeMobile": {
+      "type": "number",
+      "default": 14
+    },
+    "typographySizeUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "typographyWeight": {
+      "type": "string",
+      "default": "400"
+    },
+    "typographyTransform": {
+      "type": "string",
+      "default": "inherit"
+    },
+    "typographyStyle": {
+      "type": "string",
+      "default": "inherit"
+    },
+    "typographyDecoration": {
+      "type": "string",
+      "default": "inherit"
+    },
+    "typographyLineHeight": {
+      "type": "number",
+      "default": 18
+    },
+    "typographyLineHeightTablet": {
+      "type": "number",
+      "default": 18
+    },
+    "typographyLineHeightMobile": {
+      "type": "number",
+      "default": 18
+    },
+    "typographyLineHeightUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "typographyLetterSpacing": {
+      "type": "number",
+      "default": 0
+    },
+    "typographyLetterSpacingTablet": {
+      "type": "number",
+      "default": 0
+    },
+    "typographyLetterSpacingMobile": {
+      "type": "number",
+      "default": 0
+    },
+    "typographyLetterSpacingUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "typographyWordSpacing": {
+      "type": "number",
+      "default": 0
+    },
+    "typographyWordSpacingTablet": {
+      "type": "number",
+      "default": 0
+    },
+    "typographyWordSpacingMobile": {
+      "type": "number",
+      "default": 0
+    },
+    "typographyWordSpacingUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "id": "title",
+          "switchFieldName": "showTitle",
+          "selectFieldName": ""
+        },
+        {
+          "id": "category",
+          "switchFieldName": "showCategory",
+          "selectFieldName": ""
+        },
+        {
+          "id": "meta",
+          "switchFieldName": "",
+          "selectFieldName": "selectMeta"
+        }
+      ]
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCategory": {
+      "type": "boolean",
+      "default": true
+    },
+    "selectMeta": {
+      "type": "string",
+      "default": "views"
+    }
+  },
+  "keywords": [
+    "lms",
+    "test",
+    "masterstudy"
+  ],
+  "example": {},
+  "textdomain": "masterstudy-lms-learning-management-system",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
